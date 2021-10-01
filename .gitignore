@@ -1,9 +1,9 @@
-# build/
+build/
 
-# dist/
+dist/
 
-# shrun.spec
+shrun.spec
 
-# __pycache__/
+__pycache__/
 
-# myvirtual/
+myvirtual/
