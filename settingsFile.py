@@ -12,11 +12,11 @@ class SettingsClass:
     def __init__(self , linuxPath):
 
         # setting up the settings file path based the operation system of the user
-        self.path = linuxPath + "/settings.txt"
+        self.path = linuxPath
 
         # default settings file data
         self.settingsFile = {
-  "shellScriptPaths_path": "None" , 
+  "script1": "None" , 
 }
 
     
