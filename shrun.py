@@ -85,15 +85,19 @@ if(len(GlobalData.settingsDict) == 0):
 
 
 
-pathOfScriptToRun = GlobalData.settingsDict.get(scriptToRun , None)
+pathOfScriptToRun = str(GlobalData.settingsDict.get(scriptToRun , "none"))
 
 if(pathOfScriptToRun.lower() == "none"):
     print("script {} not found".format(scriptToRun))
 
     print("\nyou can choose from these - ")
 
+    tempcount = 1
     for i,j in GlobalData.settingsDict.items():
-        print(i)
+        print("{}. {}".format(tempcount , i))
+        tempcount = tempcount + 1
+
+    sys.exit()
 
 
 my_file = Path(pathOfScriptToRun)
